@@ -72,3 +72,10 @@ function toggleShield() {
     // Update the button text
     document.getElementById('shield').innerText = shieldEquipped ? 'Unequip Shield' : 'Equip Shield';
 }
+
+// Command: /locate village
+function executeCommand(command) {
+    if (command === '/locate village') {
+        locateVillage();
+    }
+}
