@@ -1,4 +1,3 @@
-// Initialize the canvas using fabric.js
 const canvas = new fabric.Canvas('myCanvas');
 let shieldEquipped = false;  // Flag to track shield status
 let shield = null;  // Store the shield object
@@ -9,7 +8,7 @@ shield = new fabric.Rect({
     width: 100,
     height: 100,
     fill: 'blue',
-    left: 450,
+    left: 350,
     top: 250,
     visible: false // Initially hidden
 });
@@ -19,7 +18,6 @@ canvas.add(shield);
 
 // Create a simple village with buildings
 function createVillage() {
-    // Example: 3 buildings in the village
     const building1 = new fabric.Rect({
         width: 150,
         height: 100,
@@ -56,7 +54,7 @@ function createVillage() {
 
 // Locate a village and display it
 function locateVillage() {
-    createVillage(); // Generates the village when the button is clicked
+    createVillage();
 }
 
 // Toggle shield visibility when the button is clicked
