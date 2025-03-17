@@ -1,0 +1,59 @@
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+#myCanvas {
+    border: 2px solid black;
+    margin-top: 20px;
+}
+
+#shield, #locate_village {
+    margin-top: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#shield {
+    background-color: #ffcc00;
+}
+
+#locate_village {
+    background-color: #00ccff;
+}
+
+#head_info, #shield_info, #village_info {
+    margin-top: 20px;
+}
+
+.btn-danger {
+    background-color: red;
+    padding: 10px;
+    color: white;
+    font-size: 18px;
+}
+
+.btn-success {
+    background-color: green;
+    padding: 10px;
+    color: white;
+    font-size: 18px;
+}
+
+.btn-warning {
+    background-color: yellow;
+    padding: 10px;
+    color: black;
+    font-size: 18px;
+}
+
+.btn-primary {
+    background-color: blue;
+    padding: 10px;
+    color: white;
+    font-size: 18px;
+}
