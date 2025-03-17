@@ -3,34 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eaglercraft 1.21</title>
+    <title>Eaglercraft 1.21 Online with Shields and Villages</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/4.5.1/fabric.min.js"></script>
 </head>
 <body>
-    <center>
-        <h2 class="btn-primary">Eaglercraft 1.21</h2>
+    <div id="header">
+        <h1>Eaglercraft 1.21 Online</h1>
+        <h3>Shields Available: <span id="shield_count">0</span></h3>
+        <h3>Village Found: <span id="village_found">No</span></h3>
+    </div>
+    <button id="shield" onclick="toggleShield()">Equip Shield</button>
+    <button onclick="executeCommand('/locate village')">Locate Village</button>
 
-        <div id="head_info" class="btn-danger">
-            <h3>Current Width = <span id="current_width">100</span></h3>
-            <h3>Current Height = <span id="current_height">60</span></h3>
-        </div>
+    <canvas id="myCanvas" width="800" height="600"></canvas>
 
-        <canvas id="myCanvas" width="1000" height="600"></canvas>
-
-        <div id="shield_info" class="btn-success">
-            <h3>Shields Available: <span id="shield_count">0</span></h3>
-        </div>
-
-        <div id="shield" class="btn-warning" onclick="toggleShield()">Equip Shield</div>
-
-        <div id="village_info" class="btn-info">
-            <h3>Village Located: <span id="village_found">No</span></h3>
-        </div>
-
-        <div id="locate_village" class="btn-primary" onclick="locateVillage()">Locate Village</div>
-    </center>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/4.6.0/fabric.min.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
